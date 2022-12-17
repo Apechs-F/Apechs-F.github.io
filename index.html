@@ -14259,15 +14259,6 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Nasa wooooooooo
-Check the plots from the site
-For hypothesis test use the drake equation with the ammount of habitable planets you have found approximately, both with og values and the new more realistic ones
-Turns out we need to do some sort of prediction model uhhhh crap</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Part-1:-Finding-Earth-Like-Exoplanets">Part 1: Finding Earth Like Exoplanets<a class="anchor-link" href="#Part-1:-Finding-Earth-Like-Exoplanets">&#182;</a></h2>
 </div>
 </div>
@@ -14283,7 +14274,7 @@ Now obviously, it's unlikely that we can really find life with this little proje
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[216]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[293]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14314,7 +14305,7 @@ Now obviously, it's unlikely that we can really find life with this little proje
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[216]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[293]:</div>
 
 
 
@@ -14502,7 +14493,7 @@ Now obviously, it's unlikely that we can really find life with this little proje
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[217]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[294]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;pl_name&#39;</span><span class="p">,</span> <span class="s1">&#39;hostname&#39;</span><span class="p">,</span> <span class="s1">&#39;discoverymethod&#39;</span><span class="p">,</span> <span class="s1">&#39;disc_facility&#39;</span><span class="p">,</span> <span class="s1">&#39;pl_orbper&#39;</span><span class="p">,</span> <span class="s1">&#39;pl_orbsmax&#39;</span><span class="p">,</span> <span class="s1">&#39;pl_bmasse&#39;</span><span class="p">,</span> <span class="s1">&#39;pl_rade&#39;</span><span class="p">,</span> <span class="s1">&#39;st_spectype&#39;</span><span class="p">,</span>
@@ -14523,7 +14514,7 @@ Now obviously, it's unlikely that we can really find life with this little proje
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[217]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[294]:</div>
 
 
 
@@ -14656,7 +14647,7 @@ Now obviously, it's unlikely that we can really find life with this little proje
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[218]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[295]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;PSCompPars_2022.11.30_22.37.05.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csvfile</span><span class="p">:</span>
@@ -14783,7 +14774,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[220]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[296]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">G2</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;st_spectype&#39;</span><span class="p">])</span>
@@ -14804,7 +14795,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[220]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[296]:</div>
 
 
 
@@ -14937,7 +14928,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[221]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[297]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">G2</span><span class="p">[</span><span class="s1">&#39;HZinner&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
@@ -14958,7 +14949,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[222]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[298]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">G2</span> <span class="o">=</span> <span class="n">G2</span><span class="p">[</span><span class="n">G2</span><span class="p">[</span><span class="s1">&#39;habitable&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
@@ -14978,7 +14969,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[222]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[298]:</div>
 
 
 
@@ -15291,7 +15282,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[223]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[299]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">G2</span> <span class="o">=</span> <span class="n">G2</span><span class="p">[</span><span class="n">G2</span><span class="p">[</span><span class="s1">&#39;pl_rade&#39;</span><span class="p">]</span><span class="o">&lt;=</span><span class="mf">2.0</span><span class="p">]</span>
@@ -15312,7 +15303,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[223]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[299]:</div>
 
 
 
@@ -15391,7 +15382,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[224]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[300]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">G2</span> <span class="o">=</span> <span class="n">G2</span><span class="p">[</span><span class="n">G2</span><span class="p">[</span><span class="s1">&#39;pl_bmasse&#39;</span><span class="p">]</span><span class="o">&lt;=</span><span class="mf">1.9</span><span class="p">]</span>
@@ -15412,7 +15403,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[224]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[300]:</div>
 
 
 
@@ -15468,7 +15459,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>This does not particularly give us a lot to work with. Such issues can easily arise whenever you are looking into an incredibly specific subset of the data. As such we will have to broaden our horizons and try again.</p>
-<h1 id="36-lines-of-code">36 lines of code<a class="anchor-link" href="#36-lines-of-code">&#182;</a></h1>
+
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -15486,7 +15477,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[172]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[301]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;st_spectype&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
@@ -15505,7 +15496,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[172]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[301]:</div>
 
 
 
@@ -15566,7 +15557,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[225]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[302]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;st_rad&#39;</span><span class="p">,</span> <span class="s1">&#39;st_teff&#39;</span><span class="p">,</span> <span class="s1">&#39;st_spectype&#39;</span><span class="p">,</span> <span class="s1">&#39;pl_orbsmax&#39;</span><span class="p">])</span> <span class="c1">#we can&#39;t do calculations with missing variables</span>
@@ -15608,7 +15599,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[225]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[302]:</div>
 
 
 
@@ -15632,7 +15623,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[226]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[303]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;main_type&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;S&#39;</span><span class="p">]</span>
@@ -15695,7 +15686,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[175]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[304]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">size_lim</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;pl_rade&#39;</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">50</span><span class="p">]</span> <span class="c1">#in order to get a better look at the data I will be filtering out certain entries</span>
@@ -15728,7 +15719,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 
 
 <div class="jp-RenderedImage jp-OutputArea-output ">
-<img src="data:image/png;base64,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
+<img src="data:image/png;base64,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
 "
 >
 </div>
@@ -15748,7 +15739,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[227]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[305]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">size_lim</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;pl_rade&#39;</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">50</span><span class="p">]</span> <span class="c1">#in order to get a better look at the data I will be filtering out certain entries</span>
@@ -15797,7 +15788,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>There is a lot to unpack here. A majority of the planets follow a fairly consistent pattern of having a mass that is around 12 times its radius. There seem to be several patterns outside of that most of which have a positive correlation between planet mass and radius. There is another notable pattern seen between 10 and 15 AU where there is a line of planets with similar radii but vastly different masses. Keeping in mind that jupiter is around 12 earth radii it would be reasonable to conclude that these are jovian planets. #36+51</p>
+<p>There is a lot to unpack here. A majority of the planets follow a fairly consistent pattern of having a mass that is around 12 times its radius. There seem to be several patterns outside of that most of which have a positive correlation between planet mass and radius. There is another notable pattern seen between 10 and 15 AU where there is a line of planets with similar radii but vastly different masses. Keeping in mind that jupiter is around 12 earth radii it would be reasonable to conclude that these are jovian planets.</p>
 
 </div>
 </div>
@@ -15814,7 +15805,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[245]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[306]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;HZinner&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
@@ -15835,7 +15826,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[246]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[307]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;habitable&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
@@ -15854,7 +15845,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[246]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[307]:</div>
 
 
 
@@ -15887,7 +15878,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <th>pl_rade</th>
       <th>st_spectype</th>
       <th>st_teff</th>
-      <th>...</th>
+      <th>st_mass</th>
       <th>st_rad</th>
       <th>main_cat</th>
       <th>main_color</th>
@@ -15896,8 +15887,6 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <th>HZinner</th>
       <th>HZouter</th>
       <th>habitable</th>
-      <th>planet_type</th>
-      <th>target</th>
     </tr>
   </thead>
   <tbody>
@@ -15913,7 +15902,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>12.500</td>
       <td>A5V</td>
       <td>7890.00</td>
-      <td>...</td>
+      <td>1.80</td>
       <td>2.01</td>
       <td>na</td>
       <td>lightcyan</td>
@@ -15922,8 +15911,6 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>2.434489</td>
       <td>5.880226</td>
       <td>1</td>
-      <td>Other</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>663</th>
@@ -15937,7 +15924,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>14.000</td>
       <td>F8 IV/V</td>
       <td>5900.00</td>
-      <td>...</td>
+      <td>1.25</td>
       <td>2.16</td>
       <td>na</td>
       <td>lightgray</td>
@@ -15946,8 +15933,6 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>1.462903</td>
       <td>3.533473</td>
       <td>1</td>
-      <td>Other</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>647</th>
@@ -15961,7 +15946,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>13.200</td>
       <td>F8 V</td>
       <td>6124.00</td>
-      <td>...</td>
+      <td>1.25</td>
       <td>1.28</td>
       <td>na</td>
       <td>lightgray</td>
@@ -15970,8 +15955,6 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>0.933981</td>
       <td>2.255923</td>
       <td>1</td>
-      <td>Other</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>945</th>
@@ -15985,7 +15968,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>13.700</td>
       <td>F8 V</td>
       <td>5882.00</td>
-      <td>...</td>
+      <td>1.12</td>
       <td>1.61</td>
       <td>na</td>
       <td>lightgray</td>
@@ -15994,8 +15977,6 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>1.083761</td>
       <td>2.617700</td>
       <td>1</td>
-      <td>Other</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>710</th>
@@ -16009,7 +15990,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>12.700</td>
       <td>F8 V</td>
       <td>6179.26</td>
-      <td>...</td>
+      <td>1.17</td>
       <td>1.94</td>
       <td>na</td>
       <td>lightgray</td>
@@ -16018,13 +15999,9 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>1.441227</td>
       <td>3.481117</td>
       <td>1</td>
-      <td>Other</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>...</th>
-      <td>...</td>
-      <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
@@ -16057,7 +16034,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>1.672</td>
       <td>M4 &amp;#177 0.5 V</td>
       <td>3185.00</td>
-      <td>...</td>
+      <td>0.25</td>
       <td>0.28</td>
       <td>na</td>
       <td>r</td>
@@ -16065,8 +16042,6 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>M</td>
       <td>0.055263</td>
       <td>0.133481</td>
-      <td>1</td>
-      <td>Superterran</td>
       <td>1</td>
     </tr>
     <tr>
@@ -16081,7 +16056,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>2.194</td>
       <td>M3</td>
       <td>3430.00</td>
-      <td>...</td>
+      <td>0.33</td>
       <td>0.31</td>
       <td>na</td>
       <td>r</td>
@@ -16089,8 +16064,6 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>M</td>
       <td>0.070959</td>
       <td>0.171393</td>
-      <td>1</td>
-      <td>Superterran</td>
       <td>1</td>
     </tr>
     <tr>
@@ -16105,7 +16078,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>1.250</td>
       <td>M4</td>
       <td>3157.00</td>
-      <td>...</td>
+      <td>0.18</td>
       <td>0.21</td>
       <td>na</td>
       <td>r</td>
@@ -16113,8 +16086,6 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>M</td>
       <td>0.040722</td>
       <td>0.098359</td>
-      <td>1</td>
-      <td>Terran</td>
       <td>1</td>
     </tr>
     <tr>
@@ -16129,7 +16100,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>2.630</td>
       <td>M4</td>
       <td>3347.00</td>
-      <td>...</td>
+      <td>0.36</td>
       <td>0.36</td>
       <td>na</td>
       <td>r</td>
@@ -16138,8 +16109,6 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>0.078464</td>
       <td>0.189521</td>
       <td>1</td>
-      <td>Other</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>4947</th>
@@ -16153,7 +16122,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>1.020</td>
       <td>M7.0 V</td>
       <td>2904.00</td>
-      <td>...</td>
+      <td>0.09</td>
       <td>0.11</td>
       <td>na</td>
       <td>r</td>
@@ -16162,12 +16131,10 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
       <td>0.018049</td>
       <td>0.043594</td>
       <td>1</td>
-      <td>Terran</td>
-      <td>1</td>
     </tr>
   </tbody>
 </table>
-<p>186 rows × 21 columns</p>
+<p>186 rows × 19 columns</p>
 </div>
 </div>
 
@@ -16187,7 +16154,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[247]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[308]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;planet_type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Other&#39;</span> <span class="c1">#we can add colors and plot of needed</span>
@@ -16214,7 +16181,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[247]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[308]:</div>
 
 
 
@@ -16241,7 +16208,7 @@ Name: planet_type, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[248]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[309]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">terra</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;habitable&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
@@ -16300,7 +16267,7 @@ Name: planet_type, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[256]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[310]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -16310,7 +16277,6 @@ Name: planet_type, dtype: int64</pre>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
 <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span> <span class="c1"># Import Decision Tree Classifier</span>
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">tree</span>
-<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">ttest_1samp</span>
 </pre></div>
 
      </div>
@@ -16321,7 +16287,7 @@ Name: planet_type, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[250]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[311]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
@@ -16394,26 +16360,29 @@ Name: planet_type, dtype: int64</pre>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>So there are a few things to note about our tree. Luminosity has a fairly low splitting point, likely due to the sheer ammount of stars with very low luminosities compared to our sun as seen in the previous vizualization. After that it either cuts of very small planet radii or masses depending on the branch, and finally looks at the orbit of the planet. Looking at the model it seems that luminosity, radius, and orbit all played a role in classyfying if a planet is habitable, meaning that our model is logical. Overall it seems that if we had more varied data to go from we could have a better model but since our criteria for habitability are a bit demanding this is to be expected.</p>
-<h1 id="36+51+26+20">36+51+26+20<a class="anchor-link" href="#36+51+26+20">&#182;</a></h1>
+
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>One other equation which I want to take a look at before we wrap up is the Drake equation. This equation is a theoretical prediction of the number of advanced extraterrestrial civilization with the technology to reach out to us. Initially made to stir up dialogue during some of the first SETI meetings it acts as a fairly good summary of some of the factors we need to consider in our search for extraterrestrial intelligent life. One of the factors in this equation is the average number of planets that can pottentially suppot life per star that has planets. So we will be comparing our results using the habitable planet data we got to a relatively optimisitc calculation.</p>
+<p>One other equation which I want to take a look at before we wrap up is the Drake equation. This equation is a theoretical prediction of the number of advanced extraterrestrial civilization with the technology to reach out to us. Initially made to stir up dialogue during some of the first SETI meetings it acts as a fairly good summary of some of the factors we need to consider in our search for extraterrestrial intelligent life. One of the factors in this equation is the average number of planets that can potentially support life per star that has planets. So we will be comparing our results using the habitable planet data we got to a relatively optimistic calculation.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[260]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[312]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">N_drake</span> <span class="o">=</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="mi">1</span> <span class="o">*</span> <span class="mf">0.4</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="mf">420.6</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">N_drake</span> <span class="o">=</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="mi">1</span> <span class="o">*</span> <span class="mf">0.4</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="mf">420.6</span> <span class="c1">#average number of planets that can potentially support life is 0.4 here</span>
 <span class="n">Our_drake</span> <span class="o">=</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="mi">1</span> <span class="o">*</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">])</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="mf">420.6</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">N_drake</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">Our_drake</span><span class="p">)</span>
-<span class="c1">#t, p = ttest_1samp(a = list(Our_drake), popmean = N_drake)</span>
-<span class="c1">#t, p</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Opimistic number of intelligent civilizations&quot;</span><span class="p">,</span> <span class="n">N_drake</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Our approximated number of intelligent civilizations&quot;</span><span class="p">,</span> <span class="n">Our_drake</span><span class="p">)</span>
+
+<span class="n">n_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">target</span><span class="p">))</span>
+<span class="n">n_array</span><span class="p">[:</span><span class="mi">696</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">#the mean of this array is the same as the value used in the optimistic calculation</span>
+                  <span class="c1">#we do this to make the ttest work as intended</span>
+<span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">],</span> <span class="n">b</span><span class="o">=</span><span class="n">n_array</span><span class="p">,</span> <span class="n">equal_var</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16433,10 +16402,24 @@ Name: planet_type, dtype: int64</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>31.545000000000005
-1.6788909666283087
+<pre>Opimistic number of intelligent civilizations 31.545000000000005
+Our approximated number of intelligent civilizations 1.6788909666283087
 </pre>
 </div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[312]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Ttest_indResult(statistic=-30.93681848126587, pvalue=7.88681329467399e-186)</pre>
+</div>
+
 </div>
 
 </div>
@@ -16446,7 +16429,7 @@ Name: planet_type, dtype: int64</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Looking at these two calculations we can see that the results we got using our calculations result in a much lower count of pottentially intelligent life in our galaxy, going from over 30 intelligent civilizations, to just 1.</p>
+<p>Looking at these two calculations we can see that the results we got using our calculations result in a much lower count of pottentially intelligent life in our galaxy, going from over 30 intelligent civilizations, to around 1. Seeig how small the p value is it's safe to say that our calculations are significantly different from the optimisitc calculation. For now we don't know enough about the galaxy to say which calculation is  closer to the truth, so there's no right or wrong calculation per say. If we ever do start finding intelligent civilizations we will be able to revist this calcualtion with a new perspective.</p>
 
 </div>
 </div>
