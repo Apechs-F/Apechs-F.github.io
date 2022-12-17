@@ -14259,22 +14259,22 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Part-1:-Finding-Earth-Like-Exoplanets">Part 1: Finding Earth Like Exoplanets<a class="anchor-link" href="#Part-1:-Finding-Earth-Like-Exoplanets">&#182;</a></h2>
+<h2 id="Part-1:-Finding-Earth-Like-Exoplanets">Part 1: Finding Earth-Like Exoplanets<a class="anchor-link" href="#Part-1:-Finding-Earth-Like-Exoplanets">&#182;</a></h2>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>“Two possibilities exist: either we are alone in the Universe or we are not. Both are equally terrifying.” ― Arthur C. Clarke.</p>
 <p>For our project we will be working with nasa data because exoplanets are really cool to think about.
-I mean cmon, the search for life outside of the solar system is one of the biggest interests of astronomers worldwide
+I mean c'mon, the search for life outside of the solar system is one of the biggest interests of astronomers worldwide
 Now obviously, it's unlikely that we can really find life with this little project but I think it would be fun to think about how likely it is that we aren't alone in this vast universe.</p>
-<p>For our tutorial, we will be taking a human biased perspective, looking for exoplanets which match up the most with our earth, mainly because it is our only current example for the existance of life. We will be using NASA's exoplanet data for convenience. Since there is an option to download a csv directly from their site, we simply have to use pandas to read that csv, keeping in mind to skip the rows which have the column name legend.</p>
+<p>For our tutorial, we will be taking a human biased perspective, looking for exoplanets which match up the most with our earth, mainly because it is our only current example for the existence of life. We will be using NASA's exoplanet data for convenience. Since there is an option to download a csv directly from their site, we simply have to use pandas to read that csv, keeping in mind to skip the rows which have the column name legend.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[293]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[313]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14305,7 +14305,7 @@ Now obviously, it's unlikely that we can really find life with this little proje
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[293]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[313]:</div>
 
 
 
@@ -14487,13 +14487,13 @@ Now obviously, it's unlikely that we can really find life with this little proje
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>There are around 84 columns inthis datset, not all of which are going to be usefull to us. While you may find some of these for your own twists on this tutorial I will be dropping some of them to make the dataframe less cluttered. By using some built in pandas functionality we can slice out the columns we want to keep.</p>
+<p>There are around 84 columns in this dataset, not all of which are going to be useful to us. While you may find some of these for your own twists on this tutorial I will be dropping some of them to make the dataframe less cluttered. By using some built in pandas functionality we can slice out the columns we want to keep.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[294]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[314]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;pl_name&#39;</span><span class="p">,</span> <span class="s1">&#39;hostname&#39;</span><span class="p">,</span> <span class="s1">&#39;discoverymethod&#39;</span><span class="p">,</span> <span class="s1">&#39;disc_facility&#39;</span><span class="p">,</span> <span class="s1">&#39;pl_orbper&#39;</span><span class="p">,</span> <span class="s1">&#39;pl_orbsmax&#39;</span><span class="p">,</span> <span class="s1">&#39;pl_bmasse&#39;</span><span class="p">,</span> <span class="s1">&#39;pl_rade&#39;</span><span class="p">,</span> <span class="s1">&#39;st_spectype&#39;</span><span class="p">,</span>
@@ -14514,7 +14514,7 @@ Now obviously, it's unlikely that we can really find life with this little proje
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[294]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[314]:</div>
 
 
 
@@ -14647,7 +14647,7 @@ Now obviously, it's unlikely that we can really find life with this little proje
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[295]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[315]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;PSCompPars_2022.11.30_22.37.05.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csvfile</span><span class="p">:</span>
@@ -14768,13 +14768,13 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Our sun is a G2 class star, often reffered to as a yellow dwarf. This classification can tell us a lot about a star but for now what we care about is that it tells us a star is similar to our sun. We will filter our data by looking at any star which is a G2 class as well. Due to this being a substring, on top of the ususal filtering we have to cast the column contents as a string in order to use the contains method.</p>
+<p>Our sun is a G2 class star, often referred to as a yellow dwarf. This classification can tell us a lot about a star but for now what we care about is that it tells us a star is similar to our sun. We will filter our data by looking at any star which is a G2 class as well. Due to this being a substring, on top of the usual filtering we have to cast the column contents as a string in order to use the contains method.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[296]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[316]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">G2</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;st_spectype&#39;</span><span class="p">])</span>
@@ -14795,7 +14795,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[296]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[316]:</div>
 
 
 
@@ -14922,13 +14922,13 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Arguably the most important factor for finding earth like and just habitable planets is its location withtin the habitable zone. The habitable zone is an area beggining and ending some distance away from a star in which for the most part, water can exist in a liquid form. Liquid water is vital to life as we know it as it serves as a medium for chemical reactions to occur in, more complex compounds to form, among other things. We will be using three new rows for our purposes. HZinner and HZouter will be used to store the inner and outer reach of the habitable zone. Using a simple logical check we will also see if the planets orbit falls within the habitable zone. Fortunately for us NASA has an equation to find the inner and outer range of the habitable zone for G2 stars.</p>
+<p>Arguably the most important factor for finding earth-like and just habitable planets is its location within the habitable zone. The habitable zone is an area beginning and ending some distance away from a star in which for the most part, water can exist in a liquid form. Liquid water is vital to life as we know it as it serves as a medium for chemical reactions to occur in, more complex compounds to form, among other things. We will be using three new rows for our purposes. HZinner and HZouter will be used to store the inner and outer reach of the habitable zone. Using a simple logical check we will also see if the planet's orbit falls within the habitable zone. Fortunately for us NASA has an equation to find the inner and outer range of the habitable zone for G2 stars.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[297]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[317]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">G2</span><span class="p">[</span><span class="s1">&#39;HZinner&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
@@ -14949,7 +14949,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[298]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[318]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">G2</span> <span class="o">=</span> <span class="n">G2</span><span class="p">[</span><span class="n">G2</span><span class="p">[</span><span class="s1">&#39;habitable&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
@@ -14969,7 +14969,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[298]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[318]:</div>
 
 
 
@@ -15276,13 +15276,13 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Now that we've filtered out the planets which lie within the range of the habitable zone, we have to do additional filtering to curate Earth like planets. According to NASA, one factor of being considered an Earth like planet is its size, typically looking for a planetery radius of 0.5 to 2.0 of earth radii.</p>
+<p>Now that we've filtered out the planets which lie within the range of the habitable zone, we have to do additional filtering to curate Earth-like planets. According to NASA, one factor of being considered an Earth-like planet is its size, typically looking for a planetary radius of 0.5 to 2.0 of earth radii.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[299]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[319]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">G2</span> <span class="o">=</span> <span class="n">G2</span><span class="p">[</span><span class="n">G2</span><span class="p">[</span><span class="s1">&#39;pl_rade&#39;</span><span class="p">]</span><span class="o">&lt;=</span><span class="mf">2.0</span><span class="p">]</span>
@@ -15303,7 +15303,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[299]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[319]:</div>
 
 
 
@@ -15382,7 +15382,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[300]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[320]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">G2</span> <span class="o">=</span> <span class="n">G2</span><span class="p">[</span><span class="n">G2</span><span class="p">[</span><span class="s1">&#39;pl_bmasse&#39;</span><span class="p">]</span><span class="o">&lt;=</span><span class="mf">1.9</span><span class="p">]</span>
@@ -15403,7 +15403,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[300]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[320]:</div>
 
 
 
@@ -15469,15 +15469,15 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>So clearly taking a very earth centered approach is not the way to go. But even if we go to the absolute limits of what can be considered habitable it would still be difficult concretely state that was a planet was habitable due to the ammount of factors which play into the equation, a lot of which we simply do not know. We can however account for as many factors as possible given the data, and for the sake of our experiment, take on the most optimistic view possible.</p>
-<p>Beggining our analysis, we first have to talk about main sequence stars. 90% of the stars in our universe are main sequence stars, meaning they fuse hydrogen to form helium, like our sun does. Studying these main sequence stars astronomers managed to come to the conclussion that a main sequence stars' temperature, color, and luminosity are all related. All of these variables playing a role in our calculation of the habitable zone and as such are of great interest to us.</p>
+<p>So clearly taking a very earth centered approach is not the way to go. But even if we go to the absolute limits of what can be considered habitable it would still be difficult to concretely state that a planet was habitable due to the amount of factors which play into the equation, a lot of which we simply do not know. We can however account for as many factors as possible given the data, and for the sake of our experiment, take on the most optimistic view possible.</p>
+<p>Beginning our analysis, we first have to talk about main sequence stars. 90% of the stars in our universe are main sequence stars, meaning they fuse hydrogen to form helium, like our sun does. Studying these main sequence stars astronomers managed to come to the conclusion that a main sequence stars' temperature, color, and luminosity are all related. All of these variables play a role in our calculation of the habitable zone and as such are of great interest to us.</p>
 <p>For right now, I want to see the spread of discovered exoplanets across varying stars.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[301]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[321]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;st_spectype&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
@@ -15496,7 +15496,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[301]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[321]:</div>
 
 
 
@@ -15551,13 +15551,13 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>There are a lot of unique types and subtypes which we might have to worry about if we end doing a more in depth analysis at some point. For now, I will just be looking at the base class of each star for simplicity. I will do this by adding a new column which will assign a number to each main class for categorical encoding, and also for ease of coloration when we begin plotting.</p>
+<p>There are a lot of unique types and subtypes which we might have to worry about if we end up doing a more in depth analysis at some point. For now, I will just be looking at the base class of each star for simplicity. I will do this by adding a new column which will assign a color to each main class for grouping, and also for ease of coloration when we begin plotting. We will also be extracting the main class of the star, and also performing the luminosity calculation in advance as it will be useful to us down the line.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[302]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[322]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;st_rad&#39;</span><span class="p">,</span> <span class="s1">&#39;st_teff&#39;</span><span class="p">,</span> <span class="s1">&#39;st_spectype&#39;</span><span class="p">,</span> <span class="s1">&#39;pl_orbsmax&#39;</span><span class="p">])</span> <span class="c1">#we can&#39;t do calculations with missing variables</span>
@@ -15599,7 +15599,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[302]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[322]:</div>
 
 
 
@@ -15617,13 +15617,13 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>There are a few stars which do not fall into the main sequence, and as such we will be getting rid of them for our first vizualization</p>
+<p>There are a few stars which do not fall into the main sequence, and as such we will be getting rid of them for our first visualization. Additionally we will be categorizing the main star class for sorting purposes.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[303]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[323]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;main_type&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;S&#39;</span><span class="p">]</span>
@@ -15674,19 +15674,19 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Notice that most luminosities are very low with, a notable outlier B class star being ommited for this vizualization, and a lot more variety with G, K, and M class stars. That is because if a star is incredibly bright it is harder to spot when an exoplanet passes in front of it. Not only that but there are no documented O class stars with exoplanets in this dataset. That's because these stars are typically very bright and massive, so our typical techniques of seeing how orbiting planets make a star wobble are also not as effective. K and M class stars are the two most common main sequence stars which is why we see a lot more results there. We see a lot of results for K class stars because they are of particular interest to NASA. These stars last a very long time, giving life a good chance to develop. Their chemical composition also makes it a bit more likely for oxygen and methane traces to be discovered, which can contribute to the possible presence of ozones and free oxygen within the atmospheres of exoplanets. You can read more about that here: <a href="https://www.nasa.gov/feature/goddard/2019/k-star-advantage">https://www.nasa.gov/feature/goddard/2019/k-star-advantage</a></p>
+<p>Notice that most luminosities are very low with a notable outlier B class star being omitted for this visualization, and a lot more variety with G, K, and M class stars. That is because if a star is incredibly bright it is harder to spot when an exoplanet passes in front of it. Not only that but there are no documented O class stars with exoplanets in this dataset. That's because these stars are typically very bright and massive, so our typical techniques of seeing how orbiting planets make a star wobble are also not as effective. K and M class stars are the two most common main sequence stars which is why we see a lot more results there. We see a lot of results for K class stars because they are of particular interest to NASA. These stars last a very long time, giving life a good chance to develop. Their chemical composition also makes it a bit more likely for oxygen and methane traces to be discovered, which can contribute to the possible presence of ozones and free oxygen within the atmospheres of exoplanets. You can read more about that here: <a href="https://www.nasa.gov/feature/goddard/2019/k-star-advantage">https://www.nasa.gov/feature/goddard/2019/k-star-advantage</a></p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Next up I want to look at exoplanets and their distances from their host stars by spectral class. Knowing the general luminosities of these stars we also want to see how far away planets typically orbit their stars, can give us the general distribution of planets around their host stars. I also want to take a look at planet masses since this will also play into our computations later on.</p>
+<p>Next up I want to look at exoplanets and their distances from their host stars by spectral class. Knowing the general luminosities of these stars we also want to see how far away planets typically orbit their stars, which can give us the general distribution of planets around their host stars. I also want to take a look at planet masses since this will also play into our computations later on.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[304]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[324]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">size_lim</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;pl_rade&#39;</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">50</span><span class="p">]</span> <span class="c1">#in order to get a better look at the data I will be filtering out certain entries</span>
@@ -15739,7 +15739,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[305]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[325]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">size_lim</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;pl_rade&#39;</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">50</span><span class="p">]</span> <span class="c1">#in order to get a better look at the data I will be filtering out certain entries</span>
@@ -15788,24 +15788,24 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>There is a lot to unpack here. A majority of the planets follow a fairly consistent pattern of having a mass that is around 12 times its radius. There seem to be several patterns outside of that most of which have a positive correlation between planet mass and radius. There is another notable pattern seen between 10 and 15 AU where there is a line of planets with similar radii but vastly different masses. Keeping in mind that jupiter is around 12 earth radii it would be reasonable to conclude that these are jovian planets.</p>
+<p>There is a lot to unpack here. A majority of the planets follow a fairly consistent pattern of having a mass that is around 12 times its radius. There seem to be several patterns outside of that, most of which have a positive correlation between planet mass and radius. There is another notable pattern seen between 10 and 15 AU where there is a line of planets with similar radii but vastly different masses. Keeping in mind that Jupiter is around 12 earth radii it would be reasonable to conclude that these are jovian planets.</p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Now-for-pottentially-habitable-exoplanets">Now for pottentially habitable exoplanets<a class="anchor-link" href="#Now-for-pottentially-habitable-exoplanets">&#182;</a></h2>
+<h2 id="Now-for-potentially-habitable-exoplanets">Now for potentially habitable exoplanets<a class="anchor-link" href="#Now-for-potentially-habitable-exoplanets">&#182;</a></h2>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>As previously mentioned, arguably the most imoprtant factor to deciding if a planet is pottentially habitable is an orbit that falls within the habitable zone. In reality, it's impossible to express the habitable zone in a single equation due to the ammount of factors at play ranging from the planets atmosphere to the type of star it orbits. But for the sake of our model we will be simplyfying the calculation down significanlty, using the findings from this site: <a href="https://arxiv.org/abs/1301.6674">https://arxiv.org/abs/1301.6674</a></p>
+<p>As previously mentioned, arguably the most important factor to deciding if a planet is potentially habitable is an orbit that falls within the habitable zone. In reality, it's impossible to express the habitable zone in a single equation due to the amount of factors at play ranging from the planet's atmosphere to the type of star it orbits. But for the sake of our model we will be simplifying the calculation down significantly, using the findings from this research paper: <a href="https://arxiv.org/abs/1301.6674">https://arxiv.org/abs/1301.6674</a></p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[306]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[326]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;HZinner&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
@@ -15826,7 +15826,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[307]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[327]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;habitable&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
@@ -15845,7 +15845,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[307]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[327]:</div>
 
 
 
@@ -16147,14 +16147,14 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Here are all of the planets that fall within the parameters we have set for the habitable zone. It's important to remember that while these planets fall within the habitable zone they aren't necessarily habitable. A planet that is more similar to jupiter or neptune rather than our earth would not be habitable, at least given our current understanding of life. As such, we need to classify pottentially terrestrial planets since they are, from our understanding, most likely to be habitable:
+<p>Here are all of the planets that fall within the parameters we have set for the habitable zone. It's important to remember that while these planets fall within the habitable zone they aren't necessarily habitable. A planet that is more similar to Jupiter or Neptune rather than our earth would not be habitable, at least given our current understanding of life. As such, we need to classify potentially terrestrial planets since they are, from our understanding, most likely to be habitable:
 <a href="https://phl.upr.edu/projects/habitable-exoplanets-catalog">https://phl.upr.edu/projects/habitable-exoplanets-catalog</a></p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[308]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[328]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;planet_type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Other&#39;</span> <span class="c1">#we can add colors and plot of needed</span>
@@ -16181,7 +16181,7 @@ dict_values([&#39;# COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc&#39;])
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[308]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[328]:</div>
 
 
 
@@ -16202,13 +16202,13 @@ Name: planet_type, dtype: int64</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>It seems that we have only found Earth like planets and Super Earths within their stars habitable zones. Again this makes sense because larger planets are easier to detect. Going down from over 5000 pottentially habitable planets to less than 50 really puts into perspective how hard it is for life to exist. To get one last good look at the data lets make another visualization showcasing luminosity and planet orbits.</p>
+<p>It seems that we have only found Earth-like planets and Super Earths within their star's habitable zones. Again this makes sense because larger planets are easier to detect. Going down from over 5000 potentially habitable planets to less than 50 really puts into perspective how hard it is for life to exist. To get one last good look at the data let's make another visualization showcasing luminosity and planet orbits.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[309]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[329]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">terra</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;habitable&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
@@ -16255,8 +16255,8 @@ Name: planet_type, dtype: int64</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>This is such a nice pattern. As you can see the less luminous a star is the closer a planet has to be in the habitable zone, and in general there is apositive corelation between luminosity and distance from the star. We also see that all of these planets are from G, K, and M stars. These are the stars which are typically dimmer as seen here, and also tend to burn longer, which gives life a better chance to develop.</p>
-<h1 id="36+51+26">36+51+26<a class="anchor-link" href="#36+51+26">&#182;</a></h1>
+<p>This is such a nice pattern. As you can see the less luminous a star is the closer a planet has to be in the habitable zone, and in general there is a positive correlation between luminosity and distance from the star. We also see that all of these planets are from G, K, and M stars. These are the stars which are typically dimmer as seen here, and also tend to burn longer, which gives life a better chance to develop.</p>
+
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -16267,7 +16267,7 @@ Name: planet_type, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[310]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[330]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -16287,7 +16287,7 @@ Name: planet_type, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[311]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[331]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
@@ -16359,19 +16359,19 @@ Name: planet_type, dtype: int64</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>So there are a few things to note about our tree. Luminosity has a fairly low splitting point, likely due to the sheer ammount of stars with very low luminosities compared to our sun as seen in the previous vizualization. After that it either cuts of very small planet radii or masses depending on the branch, and finally looks at the orbit of the planet. Looking at the model it seems that luminosity, radius, and orbit all played a role in classyfying if a planet is habitable, meaning that our model is logical. Overall it seems that if we had more varied data to go from we could have a better model but since our criteria for habitability are a bit demanding this is to be expected.</p>
+<p>So there are a few things to note about our tree. Luminosity has a fairly low splitting point, likely due to the sheer amount of stars with very low luminosities compared to our sun as seen in the previous visualization. After that it either cuts off very small planet radii or masses depending on the branch, and finally looks at the orbit of the planet. Looking at the model it seems that luminosity, radius, and orbit all played a role in classifying if a planet is habitable, meaning that our model is logical. Overall it seems that if we had more varied data to go from we could have a better model but since our criteria for habitability are a bit demanding this is to be expected.</p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>One other equation which I want to take a look at before we wrap up is the Drake equation. This equation is a theoretical prediction of the number of advanced extraterrestrial civilization with the technology to reach out to us. Initially made to stir up dialogue during some of the first SETI meetings it acts as a fairly good summary of some of the factors we need to consider in our search for extraterrestrial intelligent life. One of the factors in this equation is the average number of planets that can potentially support life per star that has planets. So we will be comparing our results using the habitable planet data we got to a relatively optimistic calculation.</p>
+<p>One other equation which I want to take a look at before we wrap up is the Drake equation. This equation is a theoretical prediction of the number of advanced extraterrestrial civilizations with the technology to reach out to us. Initially made to stir up dialogue during some of the first SETI meetings, it acts as a fairly good summary of some of the factors we need to consider in our search for extraterrestrial intelligent life. One of the factors in this equation is the average number of planets that can potentially support life per star that has planets. So we will be comparing our results using the habitable planet data we got to a relatively optimistic calculation.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[312]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[332]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">N_drake</span> <span class="o">=</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="mi">1</span> <span class="o">*</span> <span class="mf">0.4</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="mf">420.6</span> <span class="c1">#average number of planets that can potentially support life is 0.4 here</span>
@@ -16411,7 +16411,7 @@ Our approximated number of intelligent civilizations 1.6788909666283087
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[312]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[332]:</div>
 
 
 
@@ -16429,7 +16429,7 @@ Our approximated number of intelligent civilizations 1.6788909666283087
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Looking at these two calculations we can see that the results we got using our calculations result in a much lower count of pottentially intelligent life in our galaxy, going from over 30 intelligent civilizations, to around 1. Seeig how small the p value is it's safe to say that our calculations are significantly different from the optimisitc calculation. For now we don't know enough about the galaxy to say which calculation is  closer to the truth, so there's no right or wrong calculation per say. If we ever do start finding intelligent civilizations we will be able to revist this calcualtion with a new perspective.</p>
+<p>Looking at these two calculations we can see that the results we got using our calculations result in a much lower count of potentially intelligent life in our galaxy, going from over 30 intelligent civilizations, to around 1. Seeing how small the p value is it's safe to say that our calculations are significantly different from the optimistic calculation. For now we don't know enough about the galaxy to say which calculation is  closer to the truth, so there's no right or wrong calculation per say. If we ever do start finding intelligent civilizations we will be able to revisit this calculation with a new perspective.</p>
 
 </div>
 </div>
